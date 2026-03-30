@@ -1,0 +1,20 @@
+[
+  {
+    "file": "main.c",
+    "arguments": [
+      "gcc",
+      "main.c",
+      "-o",
+      "main.o",
+      "-I/usr/include/glib-2.0",
+      "-I/usr/lib/glib-2.0/include",
+      "-I/usr/include/libmount",
+      "-I/usr/include/blkid",
+      "-I/usr/include/sysprof-6",
+      "-pthread",
+      "-std=c99"
+    ],
+    "directory": "/home/xou/Desktop/xou/programming/c/sctg",
+    "output": "main.o"
+  }
+]
