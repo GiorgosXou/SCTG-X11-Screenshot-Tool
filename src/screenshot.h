@@ -83,7 +83,7 @@ static int save(char* path, unsigned char* text, XImage *image, int x, int y, in
     jpeg_simple_progression(&cinfo);
     jpeg_set_quality(&cinfo, QUALITY , TRUE);
 
-    // Example: Adding a comment
+    // Start compressing
     jpeg_start_compress(&cinfo, TRUE);
 
     // Write the comment. JPEG_COM is the marker type.
