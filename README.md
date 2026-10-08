@@ -10,9 +10,11 @@ A minimal and lightweight [X11](https://en.wikipedia.org/wiki/X_Window_System) s
 
 
 ## Installation
-Ensure you  have installed `xclip` tool *(for copying into the clipboard)* and `libjpeg`.
+Make sure you  have installed [`xclip`](https://archlinux.org/packages/extra/x86_64/xclip/) tool *(for copying into the clipboard)* and [`libjpeg`](https://archlinux.org/packages/extra/x86_64/libjpeg-turbo/).
 
 ```shell
+git clone https://github.com/GiorgosXou/SCTG-X11-Screenshot-Tool
+cd ./SCTG-X11-Screenshot-Tool
 gcc main.c -o sctg -lX11 -lXext -ljpeg $(pkg-config --cflags --libs gio-2.0)
 mv ./sctg ~/.local/bin/sctg
 ```
